@@ -1,0 +1,40 @@
+.quick {
+  background: #11749e;
+}
+
+.quick__container {
+  display: flex;
+}
+
+.quick__content {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.quick__text {
+  max-width: 450px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.quick__icon {
+  min-width: 69px;
+  margin: 20px;
+}
+
+@media screen and (max-width:920px) {
+  .quick__container {
+    flex-wrap: wrap;
+  }
+
+  .quick__content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:620px) {
+  .quick__icon {
+    display: none;
+  }
+}

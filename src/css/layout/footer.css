@@ -1,0 +1,35 @@
+.footer {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.footer__copyrigth {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: left;
+  flex: 1;
+}
+
+.footer__design {
+  flex: 1;
+  text-align: right;
+}
+
+@media screen and (max-width: 620px) {
+  .footer .container {
+    display: block;
+  }
+
+  .footer__copyrigth,
+  .footer__design {
+    text-align: center;
+  }
+}

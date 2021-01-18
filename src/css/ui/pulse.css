@@ -1,0 +1,20 @@
+.pulse {
+  display: block;
+  height: 70px;
+  width: 70px;
+  border: #ffffff solid 1px;
+  border-radius: 50%;
+}
+
+.pulse:after {
+  top: 23px;
+  left: 22px;
+  background-size: 24px 24px;
+  position: absolute;
+  display: block;
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-image: url("../../img/icon/icon_arrow.svg");
+  background-position: 50% 50%;
+}

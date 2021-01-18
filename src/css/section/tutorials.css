@@ -1,0 +1,61 @@
+.tutorials {
+  display: flex;
+  background: #000 url("../../img/background/key_background.jpg") no-repeat fixed center;
+  background-size: cover;
+  color: #ffffff;
+  width: 100%;
+}
+
+.tutorials__container {
+  display: flex;
+  width: 100%;
+}
+
+.tutorials__case {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.tutorials__text {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.tutorial__advantage {
+  text-transform: uppercase;
+  background: #11749e;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.tutorial__advantage:nth-child(3) {
+  max-width: 370px;
+}
+
+.tutorial__advantage:nth-child(4) {
+  max-width: 400px;
+}
+
+.tutorial__advantage:nth-child(5) {
+  max-width: 430px;
+}
+
+.tutorials__img {
+  max-height: 650px;
+}
+
+@media screen and (max-width: 740px) {
+  .tutorials__case {
+    width: 100%;
+  }
+
+  .tutorials__case:nth-child(2) {
+    display: none;
+  }
+}

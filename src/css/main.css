@@ -1,0 +1,109 @@
+body {
+  font-family: Gotham, sans-serif;
+  color: #222222;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+body.open-menu {
+  overflow: hidden;
+}
+
+.open-menu:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 100;
+}
+
+.logo {
+  width: 79px;
+  height: 75px;
+  background: url("../img/background/logo.png"), no-repeat;
+}
+
+section {
+  overflow: hidden;
+  position: relative;
+}
+
+.links {
+  position: absolute;
+  top: -85px;
+  left: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.title__text {
+  font-size: 2.5vw;
+  position: absolute;
+  margin-top: -3px;
+}
+
+.title__letter {
+  font-family: Roboto, sans-serif;
+  font-size: 16vw;
+  line-height: 17vw;
+  font-weight: 900;
+  opacity: 0.25;
+}
+
+.subtitle {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.title-article {
+  font-size: 25px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media screen and (max-width:920px) {
+  .title__letter {
+    font-size: 150px;
+    line-height: 154px;
+  }
+
+  .title__text {
+    font-size: 25px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (max-width:895px) {
+  .logo {
+    display: none;
+  }
+  .links {
+    top: -58px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

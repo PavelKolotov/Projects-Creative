@@ -1,0 +1,61 @@
+.contact {
+  background: #000 url("../../img/background/form_background.jpg") no-repeat fixed center;
+  background-size: cover;
+  text-align: center;
+}
+
+.contact .input {
+  flex: 1;
+  margin: 0 0 20px 0;
+}
+
+.contact .input:nth-child(2) {
+  margin: 0 20px 20px 20px;
+}
+
+.contact .title__text,
+.contact .title__letter {
+  color: #ffffff;
+}
+
+.contact__icon {
+  opacity: 0.25;
+}
+
+.contact__text {
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 1.5em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact .default-button {
+  margin-top: 40px;
+}
+
+@media screen and (max-width:920px) {
+  .form__row {
+    flex-direction: column;
+  }
+
+  .contact .input:nth-child(2) {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width:920px) {
+  .contact .textarea {
+    height: 100px;
+    margin: 0 auto;
+  }
+}
+

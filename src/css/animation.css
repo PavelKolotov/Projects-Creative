@@ -1,0 +1,110 @@
+.animation__home-title {
+  opacity: 0;
+  transition: 1s;
+  animation: appearance 6s 1;
+  animation-fill-mode: forwards;
+}
+
+.pulse {
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
+
+@keyframes appearance {
+    0%{
+  opacity:0;
+  }
+    100% {
+    opacity:1;
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@-webkit-keyframes pulsing {
+  0% {
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5)
+  }
+  50% {
+  -webkit-transform: scale(1.0, 1.0);
+  transform: scale(1.0, 1.0);
+  }
+  100% {
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  }
+}
+
+
+@media screen and (min-width:720px) {
+  .animation__slidedown {
+  opacity: 0;
+  transform: translate(0px, -50%);
+  transition: all 1s ease 0s;
+}
+
+  .animation__slideup {
+  opacity: 0;
+  transform: translate(0px, 100%);
+  transition: all 1s ease 0s;
+}
+
+  .animation__slideup._active {
+  opacity: 1;
+  transform: translate(0px, 0);
+}
+
+  .animation__slidedown._active {
+    opacity: 1;
+    transform: translate(0px, 0);
+  }
+
+  .animation__slideleft {
+    opacity: 0;
+    transform: translate(100%, 0px);
+    transition: all 1s ease 0s;
+  }
+
+  .animation__slideleft._active {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+
+  .animation__slideright {
+    opacity: 0;
+    transform: translate(-100%, 0px);
+    transition: all 1s ease 0s;
+  }
+
+  .animation__slideright._active {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+
+  .animation__opacity._active {
+    opacity: 1;
+    transition: 3s;
+  }
+
+  .blog__title._active {
+    transition: all 3s ease 0.4s;
+  }
+
+  .blog__text._active {
+    transition: all 3s ease 0.8s;
+  }
+}

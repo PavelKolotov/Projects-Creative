@@ -1,0 +1,34 @@
+.icon-fb {
+  background-image: url("../img/icon/icon_facebook.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-tw {
+  background-image: url("../img/icon/icon_twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-sk {
+  background-image: url("../img/icon/icon_skype.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-ld {
+  background-image: url("../img/icon/icon_linkedin.svg");
+  background-repeat: no-repeat;
+}
+
+.icon-note {
+  background-image: url("../img/icon/icon_note.png");
+  background-repeat: no-repeat;
+}
+
+.icon-loupe {
+  background-image: url("../img/icon/icon_loupe.png");
+  background-repeat: no-repeat;
+}
+
+.icon-messenger {
+  background-image: url("../img/icon/icon_messenger.png");
+  background-repeat: no-repeat;
+}

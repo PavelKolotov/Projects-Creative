@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main {
+  display: block;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+iframe {
+  display: block;
+  border: 0;
+}
+
+input, button, textarea {
+  outline: none;
+}
+
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder          {color:#ffffff;}
+:-moz-placeholder           {color:#ffffff;}
+:-ms-input-placeholder      {color:#ffffff;}
