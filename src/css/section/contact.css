@@ -1,5 +1,5 @@
 .contact {
-  background: #000 url("../../img/background/form_background.jpg") no-repeat fixed center;
+  background: #000 url("../../img/background/form_background.jpg") no-repeat scroll center;
   background-size: cover;
   text-align: center;
 }
@@ -59,3 +59,8 @@
   }
 }
 
+@media screen and (min-width: 1240px)  {
+  .contact {
+    background-attachment: fixed;
+  }
+}

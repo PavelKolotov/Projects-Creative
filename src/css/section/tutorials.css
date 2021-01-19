@@ -1,6 +1,6 @@
 .tutorials {
   display: flex;
-  background: #000 url("../../img/background/key_background.jpg") no-repeat fixed center;
+  background: #000 url("../../img/background/key_background.jpg") no-repeat scroll center;
   background-size: cover;
   color: #ffffff;
   width: 100%;
@@ -57,5 +57,11 @@
 
   .tutorials__case:nth-child(2) {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1240px)  {
+  .tutorials {
+    background-attachment: fixed;
   }
 }

@@ -1,6 +1,6 @@
 .home {
   padding-top: 60px;
-  background: #000 url("../../img/background/header_background.jpg") no-repeat fixed center;
+  background: #000 url("../../img/background/header_background.jpg") no-repeat scroll center;
   background-size: cover;
   height: 100vh;
   text-align: center;
@@ -52,5 +52,12 @@
 @media screen and (max-width:420px) {
   .home__subtitle {
     letter-spacing: 4px;
+  }
+}
+
+
+@media screen and (min-width: 1240px)  {
+  .home {
+    background-attachment: fixed;
   }
 }

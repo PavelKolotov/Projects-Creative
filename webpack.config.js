@@ -27,8 +27,9 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Creatives',
-      template: './template.html'
+      template: path.resolve(__dirname, './template.html'),
+      filename: 'index.html',
+      cache: false,
     }),
     new CopyPlugin({
       patterns: [
